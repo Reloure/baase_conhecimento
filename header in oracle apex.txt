@@ -1,0 +1,7 @@
+<b>NUMERO DO DAD: </b> &P12_ID.
+<b>DATA DA CRIAÇÃO DAD: </b> &P12_DATA_CRIACAO. -
+<b>ORDEM: </b> &P12_OF_. -
+<b>CLIENTE: </b> &P12_CLIENTE. -
+<b>MAQUINA: </b> &P12_MAQUINA. -
+<b>PESO PROGRAMADO: </b> &P12_PESO_PROGRAMADO.
+<p><b>DESCRICAO: </b> &P12_DESCRICAO.</p>    
