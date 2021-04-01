@@ -1,0 +1,15 @@
+/* apos atualizar o reporte do formulario a instrucao abaixo é para criar uma acao dinamica ao salvar o formulario atualiza o report*/
+
+Ação:
+   Dialog Closed
+	New = (digitar o nome que desejar)
+		When:
+		Event = Dialog Closed
+		Selection Type = Region
+		Region = (escolher a regiao para atualizar)
+		
+		True:
+		Affected Elements:
+		Selection Type = Region
+		Region = (escolher a regiao para atualizar)
+		
