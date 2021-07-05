@@ -1,0 +1,26 @@
+--UPDATE
+UPDATE mcm.mcm_ordem_of 
+    SET maqina =:P6_MAQINA
+    WHERE ORDEM =:P6_ORDEM
+    AND SEQUENCIA =:P6_OPERACAO;
+
+--UPDATE PL/SQL
+DECLARE
+
+BEGIN
+    UPDATE mcm.mcm_ordem_of
+        SET maqina =:P6_MAQINA
+    WHERE ORDEM =:P6_ORDEM     
+    AND SEQUENCIA =:P6_OPERACAO;
+FOR i IN (SELECT  a.copfilha ordem_filha, b.ope ope_vinculada 
+               FROM asdata.ppopfilhas a LEFT JOIN asdata.ppopfilhasvinc b ON (a.cop = b.cop)
+               WHERE a.cop =:P6_ORDEM and b.ope =:P6_OPERACAO) loop
+BEGIN
+       UPDATE mcm.mcm_ordem_of 
+           SET maqina =:P6_MAQINA
+       WHERE ORDEM =i.ordem_filha     
+       AND SEQUENCIA =:P6_OPERACAO;
+END; 
+    COMMIT;
+        END LOOP;
+END;
