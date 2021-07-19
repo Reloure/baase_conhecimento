@@ -1,0 +1,11 @@
+INSERT INTO mcm.relatorio_inspecao 
+                                (ORDEM,SUB_LOTE,MAQUINA,OPE,PESO_ROLO,N_ROLO,
+                                 OPERACAO,LOTE,C1_LARG,C2_LARG,C3_LARG,C4_LARG,
+                                 C1_ESP,INT_ENTRADA,EXT_ENTRADA)
+VALUES     
+                                  (:P35_ORDEM,:P35_SUB_LOTE,:P35_MAQUINA,:P35_OPE,
+                                    :P35_PESO_ROLO,:P35_N_ROLO,:P35_OPERACAO,
+                                    :P35_LOTE,:P35_C1_LARG,:P35_C1_LARG,:P35_C1_LARG,
+                                    :P35_C1_LARG,:P35_C1_ESP,:P35_INT_ENTRADA,
+                                    :P35_EXT_ENTRADA);
+                                    
