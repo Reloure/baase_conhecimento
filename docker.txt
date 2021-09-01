@@ -8,3 +8,8 @@ docker run -d nginx
 --
 docker stop 'nome do container' "parar o container"
 
+-expor portas o container
+	docker run -d -p 80:80 nginx
+
+primeiro 80 é a porta que vai ser exposta no computador
+segundo 80 é a porta que vai ser exposta no container
