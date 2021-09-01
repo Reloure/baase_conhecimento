@@ -13,3 +13,15 @@ docker stop 'nome do container' "parar o container"
 
 primeiro 80 é a porta que vai ser exposta no computador
 segundo 80 é a porta que vai ser exposta no container
+
+-- start no container ja criado
+	docker start 'nome ou ID do container'
+
+-- definir nome do container tag --name é responsavel para alterar o nome
+	docker run -d -p 80:80 --name nginx_app nginx
+
+-- verificar os logs container
+	docker logs 'nome ou ID do container'
+--acompanhar logs do container
+	docker logs 'nome ou ID do container'
+	
