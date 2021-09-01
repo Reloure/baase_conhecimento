@@ -1,0 +1,10 @@
+docker ps "listar listar todos os container rodando"
+docker ps -a "listar todos os contairner que rodaram e o que está rodando"
+docker run "roda a imagem e cria o container"
+docker container -it
+
+--executar container em background
+docker run -d nginx	
+--
+docker stop 'nome do container' "parar o container"
+
